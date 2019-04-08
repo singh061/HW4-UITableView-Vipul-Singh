@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let itemStore = TableCell()
+        //Access the ItemsViewController and set its items store (Casting)
+        // "take this controller and wrap it aorund the actual window
+        let itemsController = window!.rootViewController as! ItemsViewController
+        itemsController.tableCell = itemStore
         return true
     }
 

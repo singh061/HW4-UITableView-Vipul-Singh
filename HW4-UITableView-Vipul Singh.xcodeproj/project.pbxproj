@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2183B850225A79FD00D44C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183B84F225A79FD00D44C4A /* AppDelegate.swift */; };
-		2183B852225A79FD00D44C4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183B851225A79FD00D44C4A /* ViewController.swift */; };
 		2183B855225A79FD00D44C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2183B853225A79FD00D44C4A /* Main.storyboard */; };
 		2183B857225A7A0300D44C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2183B856225A7A0300D44C4A /* Assets.xcassets */; };
 		2183B85A225A7A0300D44C4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2183B858225A7A0300D44C4A /* LaunchScreen.storyboard */; };
 		2183B865225A7A0300D44C4A /* HW4_UITableView_Vipul_SinghTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183B864225A7A0300D44C4A /* HW4_UITableView_Vipul_SinghTests.swift */; };
 		2183B870225A7A0300D44C4A /* HW4_UITableView_Vipul_SinghUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183B86F225A7A0300D44C4A /* HW4_UITableView_Vipul_SinghUITests.swift */; };
+		2183B87E225A7BBA00D44C4A /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183B87D225A7BBA00D44C4A /* ItemViewController.swift */; };
+		2183B886225AC14200D44C4A /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183B885225AC14200D44C4A /* TableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		2183B84C225A79FD00D44C4A /* HW4-UITableView-Vipul Singh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW4-UITableView-Vipul Singh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2183B84F225A79FD00D44C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2183B851225A79FD00D44C4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2183B854225A79FD00D44C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2183B856225A7A0300D44C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2183B859225A7A0300D44C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		2183B86B225A7A0300D44C4A /* HW4-UITableView-Vipul SinghUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW4-UITableView-Vipul SinghUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2183B86F225A7A0300D44C4A /* HW4_UITableView_Vipul_SinghUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW4_UITableView_Vipul_SinghUITests.swift; sourceTree = "<group>"; };
 		2183B871225A7A0300D44C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2183B87D225A7BBA00D44C4A /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		2183B885225AC14200D44C4A /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				2183B84F225A79FD00D44C4A /* AppDelegate.swift */,
-				2183B851225A79FD00D44C4A /* ViewController.swift */,
 				2183B853225A79FD00D44C4A /* Main.storyboard */,
 				2183B856225A7A0300D44C4A /* Assets.xcassets */,
 				2183B858225A7A0300D44C4A /* LaunchScreen.storyboard */,
 				2183B85B225A7A0300D44C4A /* Info.plist */,
+				2183B87D225A7BBA00D44C4A /* ItemViewController.swift */,
+				2183B885225AC14200D44C4A /* TableCell.swift */,
 			);
 			path = "HW4-UITableView-Vipul Singh";
 			sourceTree = "<group>";
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2183B852225A79FD00D44C4A /* ViewController.swift in Sources */,
+				2183B886225AC14200D44C4A /* TableCell.swift in Sources */,
 				2183B850225A79FD00D44C4A /* AppDelegate.swift in Sources */,
+				2183B87E225A7BBA00D44C4A /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
